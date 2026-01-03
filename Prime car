@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Prime Car.uz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#f5c400;
+  --dark:#0b0b0b;
+  --gray:#1a1a1a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+}
+
+body{
+  background:var(--dark);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h2{color:var(--gold);font-weight:800}
+nav a{
+  color:#fff;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.4),var(--dark)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+}
+
+.hero h1{
+  font-size:64px;
+  color:var(--gold);
+}
+
+.hero p{
+  max-width:600px;
+  margin:25px 0 40px;
+  color:#ddd;
+  line-height:1.8;
+}
+
+.btn{
+  padding:15px 40px;
+  background:var(--gold);
+  color:#000;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{padding:120px 8%}
+.title{
+  font-size:42px;
+  text-align:center;
+  margin-bottom:70px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:var(--gray);
+  padding:40px;
+  border-radius:30px;
+  transition:.4s;
+}
+
+.card:hover{transform:translateY(-12px)}
+.card h3{color:var(--gold);margin-bottom:15px}
+.card p{color:#bbb;line-height:1.7}
+
+/* WHY */
+.why{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.why div{
+  background:#151515;
+  padding:35px;
+  border-radius:25px;
+}
+
+/* MAP */
+.map-box{
+  background:#111;
+  padding:40px;
+  border-radius:30px;
+}
+
+.map-box p{
+  text-align:center;
+  color:#ccc;
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+.map-box iframe{
+  width:100%;
+  height:400px;
+  border-radius:20px;
+  border:0;
+}
+
+/* CONTACT */
+.contact{
+  background:#111;
+  padding:90px 40px;
+  border-radius:40px;
+  text-align:center;
+}
+
+.phone{
+  font-size:28px;
+  color:var(--gold);
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  background:#000;
+  text-align:center;
+  color:#666;
+}
+
+@media(max-width:900px){
+  .hero h1{font-size:42px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>PRIME CAR</h2>
+  <div>
+    <a href="#services">Xizmatlar</a>
+    <a href="#map">Manzil</a>
+    <a href="#contact">Aloqa</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>Premium Avto Xizmatlar</h1>
+    <p>
+      Tonirovka, polirovka, bron va professional ximchistka.
+      Avtomobilingiz biz bilan ideal holatda.
+    </p>
+    <a class="btn" href="#contact">Bog‘lanish</a>
+  </div>
+</div>
+
+<section id="services">
+  <h2 class="title">Xizmatlar</h2>
+  <div class="services">
+    <div class="card"><h3>Tonirovka</h3><p>Sifatli va qonuniy plyonkalar.</p></div>
+    <div class="card"><h3>Polirovka</h3><p>Kuzovga yangi ko‘rinish.</p></div>
+    <div class="card"><h3>Bron</h3><p>Bo‘yoqni himoya qilish.</p></div>
+    <div class="card"><h3>Ximchistka</h3><p>Salon to‘liq tozalanadi.</p></div>
+      <div class="card"><h3>laminatsiya</h3><p>mashina qirilmaydi</p></div>
+            <div class="card"><h3>shumka</h3><p>mashina ovoz chiqmaydi</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Nega Prime Car?</h2>
+  <div class="why">
+    <div>✔ Tajribali ustalar</div>
+    <div>✔ Premium materiallar</div>
+    <div>✔ Kafolatlangan sifat</div>
+    <div>✔ Tez va ishonchli xizmat</div>
+  </div>
+</section>
+
+<section id="map">
+  <h2 class="title">Bizning Manzil</h2>
+  <div class="map-box">
+    <p>📍 Toshkent shahri, Sebzor, Ganga</p>
+     
+<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5991.805134190591!2d69.247767!3d41.332732!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE5JzU3LjgiTiA2OcKwMTQnNTIuMCJF!5e0!3m2!1sru!2s!4v1767377221934!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </iframe>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2 class="title">Aloqa</h2>
+        <p class="phone">📞 99-805-97-87-Doston</p>
+    <p class="phone">📞 95-888-88-40-Avaz</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Prime Car. Barcha huquqlar himoyalangan.
+</footer>
+ 
+
+ 
+
+    
+</body>
+</html>
